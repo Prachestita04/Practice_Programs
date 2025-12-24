@@ -9,12 +9,14 @@ public class $13ArmstrongNumber {
         int num = sc.nextInt();
         int temp = num;
         int count =0;
-        int rem = 0, result = 0,arm =num,mul=1;
-        while (num!=0){
+        int result = 0,arm =num;
+        while (num>0){
             num = num/10;
             count++;
         }
         while (temp!=0){
+            int rem;
+            int mul = 1;
             rem = temp%10;
             for (int j = 1;j<=count;j++){
                 mul = mul*rem;
